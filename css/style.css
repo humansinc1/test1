@@ -117,7 +117,7 @@ html {
     fill: white;
 }
 
-.menu-items {
+.menu-items-desktop {
     font-weight: 500;
     line-height: 1.25rem;
     color: white;
@@ -133,13 +133,13 @@ html {
     transition: all 0.2s ease-in-out;
 }
 
-.menu-item {
+.menu-item-desktop {
     position: relative;
     padding-left: 0.75rem;
     text-align: center;
 }
 
-.menu-item::before {
+.menu-item-desktop::before {
     content: "";
     position: absolute;
     left: 0;
@@ -152,8 +152,12 @@ html {
     display: none;
 }
 
-.menu-item:hover::before {
+.menu-item-desktop:hover::before {
     display: inline-block;
+}
+
+.menu-mobile {
+    display: none;
 }
 
 .welcome {
@@ -415,8 +419,12 @@ html {
         /* margin: 0 auto; */    
     } 
 
-    .header-line {
-        display: none;
+    .menu-desktop, .logo-link {
+        display: none !important;
+    }
+
+    .menu-mobile {
+        /* display: block; */
     }
 
     .welcome-form {
