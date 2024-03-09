@@ -317,7 +317,7 @@ html {
 }
 
 .joinus {
-    background-image: url(/img/joinus-1.jpeg);
+    background-image: url(img/joinus-1.jpeg);
     width: 100%;
     height: 620px;
 }
@@ -366,11 +366,11 @@ html {
 }
 
 .product-card-abonements {
-    background-image: url(/img/product-card-2.jpeg);
+    background-image: url(img/product-card-2.jpeg);
 }
 
 .product-card-merch {
-    background-image: url(/img/product-card-2.jpeg);
+    background-image: url(img/product-card-2.jpeg);
 }
 
 .method-heading {
