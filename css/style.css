@@ -336,12 +336,11 @@ html {
     margin-top: 4rem;
     display: flex;
     gap: 24px;
-    height: 613px;
+    max-height: 613px;
 }
 
 .product-card {
     width: 50%;
-    max-height: 41vw;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -354,6 +353,8 @@ html {
 .product-card-heading {
     font-size: 2.5rem;
     color: white;
+    margin-top: 70%;
+
 }
 
 .product-card-description {
@@ -389,6 +390,10 @@ html {
 }
 
 @media screen and (max-width: 1024px) {
+    
+    html {
+        font-size: 14px;
+    }
     
     .container {
         padding-left: 1.5rem;
@@ -440,6 +445,10 @@ html {
 
     .product-card {
         width: 100%;
-        min-height: 50vw;
+        /* min-height: 50vw; */   
+    }
+
+    .product-card-heading {
+        margin-top: 4rem;
     }
 }
