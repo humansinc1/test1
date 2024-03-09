@@ -6,6 +6,9 @@ document.getElementById("joinus-button").addEventListener('click', () => {
 document.getElementById("menu-button-desktop").addEventListener('click', () => {
     document.getElementById('welcome-form-name').focus();
 });
+document.getElementById("menu-button-mobile").addEventListener('click', () => {
+    document.getElementById('welcome-form-name').focus();
+});
 
 //sticky header changes on scroll
 window.onscroll = function () {scrollFunction()};
@@ -21,3 +24,14 @@ function scrollFunction () {
         document.getElementById('menu-items-desktop').style.backgroundColor = "rgba(255, 255, 255, 0.1)";
     }
 };
+
+//menu mobile
+
+function menuState() {
+    var x = document.getElementById("menu-mobile");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
