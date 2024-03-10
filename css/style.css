@@ -687,8 +687,8 @@ html {
 }
 
 .teachers-wrapper {
-    max-width: 1440px;
-    margin: 0 auto;
+    /* max-width: 1440px;
+    margin: 0 auto; */
 }
 
 .teachers-heading {
@@ -724,7 +724,7 @@ html {
 }
 
 .teachers-slide {
-    width: 50%;
+    width: 40%;
 }
 
 .teachers-description {
