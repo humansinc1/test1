@@ -686,6 +686,11 @@ html {
     margin-bottom: 1rem;
 }
 
+.teachers-wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 .teachers-heading {
     text-align: center;
     margin-bottom: 4rem;
