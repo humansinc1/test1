@@ -7,9 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
 </head>
 <body>
     <header class="header" id="header">
@@ -203,10 +203,14 @@
                     
                 </div>
                 <div class="place-slider">
-                    <div class="swiper mySwiper">
+                    <div class="swiper mySwiper-1 place-swiper-slider">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="img/place-1.jpeg" alt=""></div>
-                            <div class="swiper-slide"><img src="img/place-1.jpeg" alt=""></div>
+                            <div class="swiper-slide place-slide">
+                                <img src="img/place-1.jpeg" alt="" class="place-slide-img">
+                            </div>
+                            <div class="swiper-slide place-slide">
+                                <img class="place-slide-img" src="img/place-1.jpeg" alt="">
+                            </div>
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
@@ -317,8 +321,43 @@
                 </article>
             </div>
         </section>
-        <section class="teachers"></section>
-        <section class="blog"></section>
+        <section class="teachers container container-section">
+            <h2 class="teachers-heading heading-large">Преподаватели</h2>
+            <div class="swiper mySwiper-2 teachers-swiper-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide teachers-slide">
+                        <img src="img/teachers-1.jpeg" alt="" class="teachers-slide-img method-image">
+                        <h3 class="teacher-name heading-small">Александр Сироха</h3>
+                        <p class="teachers-description">Основатель школы, ведущий тренер-эксперт</p>
+                        <button class="secondary" type="button">Подробнее &#8594;</button>
+                    </div>
+                    <div class="swiper-slide teachers-slide">
+                        <img src="img/teachers-1.jpeg" alt="" class="teachers-slide-img method-image">
+                        <h3 class="teacher-name heading-small">Александр Сироха</h3>
+                        <p class="teachers-description">Основатель школы, ведущий тренер-эксперт</p>
+                        <button class="secondary" type="button">Подробнее &#8594;</button>
+                    </div>
+                    <div class="swiper-slide teachers-slide">
+                        <img src="img/teachers-1.jpeg" alt="" class="teachers-slide-img method-image">
+                        <h3 class="teacher-name heading-small">Александр Сироха</h3>
+                        <p class="teachers-description">Основатель школы, ведущий тренер-эксперт</p>
+                        <button class="secondary" type="button">Подробнее &#8594;</button>
+                    </div>
+                    <div class="swiper-slide teachers-slide">
+                        <img src="img/teachers-1.jpeg" alt="" class="teachers-slide-img method-image">
+                        <h3 class="teacher-name heading-small">Александр Сироха</h3>
+                        <p class="teachers-description">Основатель школы, ведущий тренер-эксперт</p>
+                        <button class="secondary" type="button">Подробнее &#8594;</button>
+                    </div>
+                
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>  
+            </div>
+        </section>
+        <section class="blog container container-section">
+            <h2 class="blog-heading heading-large">Мы в СМИ</h2>
+        </section>
         <section class="otzyvi"></section>
         <section class="project"></section>
         <section class="thrapy"></section>
@@ -328,12 +367,42 @@
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper(".mySwiper", {
+        var swiper = new Swiper(".mySwiper-1", {
         direction: "vertical",
+        grabCursor: true,
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
             },
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper-2", {
+    loop: true,
+    speed: 1000,
+    autoplay: {
+    delay: 3000,
+    },
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        scale: 1,
+        slideShadows: true,
+        }, 
+        // slidesPerView: 3,
+        // centeredSlides: true,
+        // loop: true,
+        // spaceBetween: 30,
+        // pagination: {
+        //     el: ".swiper-pagination",
+        //     clickable: true,
+        //     },
         });
     </script>
 </body>
