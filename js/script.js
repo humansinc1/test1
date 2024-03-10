@@ -34,4 +34,7 @@ function menuState() {
     } else {
       x.style.display = "block";
     }
-  }
+}
+
+//slider
+

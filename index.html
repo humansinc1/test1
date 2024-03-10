@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Точка Контакта</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Tochka_site</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
 </head>
 <body>
     <header class="header" id="header">
@@ -156,8 +157,8 @@
             </div>
         </section>
         <section class="method container container-section">
-            <h3 class="method-heading heading-large">Методика</h3>
-            <div class="method-grid">
+            <h2 class="method-heading heading-large">Методика</h2>
+            <div class="method-wrapper">
                 <p class="method-text-1 method-text">
                     Мы учим по уникальной методике, в которой учтен 5-летний опыт
                 </p>
@@ -190,8 +191,33 @@
                 </p>
             </div>
         </section>
-        <section class="place"></section>
-        <section class="faq"></section>
+        <section class="place container container-section">
+            <div class="place-wrapper">
+                <div class="place-text">
+                    <h2 class="place-heading heading-large">Место для занятий</h2>
+                    <div class="place-description">
+                        <p class="place-paragraph">Мы занимаемся в комфортных теплых залах с хорошей вентиляцией в  танцевальном клубе "Движение".
+                        </p>
+                        <p>Для вас там есть комфортные женские и мужские раздевалки, большое количество туалетов, кафе, где можно вкусно перекусить и заказать кофе. Там же есть куллер с водой</p>   
+                    </div>
+                    
+                </div>
+                <div class="place-slider">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="img/place-1.jpeg" alt=""></div>
+                            <div class="swiper-slide"><img src="img/place-1.jpeg" alt=""></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+               
+            </div>
+            
+        </section>
+        <section class="faq container container-section">
+            <h2 class="faq-heading heading-large">Частые вопросы</h2>
+        </section>
         <section class="schedule"></section>
         <section class="teachers"></section>
         <section class="blog"></section>
@@ -201,6 +227,16 @@
         <section class="contactus"></section>
     </main>
     <footer class="footer"></footer>
-<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        direction: "vertical",
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+        });
+    </script>
 </body>
 </html
