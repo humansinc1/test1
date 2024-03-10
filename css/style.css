@@ -638,6 +638,10 @@ html {
     padding: 2.5rem;
     border: 2px solid rgba(255, 193, 33, 1);
     border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 234px;
 }
 
 .schedule-card-heading {
@@ -664,7 +668,6 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 3rem;
 }
 
 .row-2 {
