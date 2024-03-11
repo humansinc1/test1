@@ -325,33 +325,50 @@
             <h2 class="teachers-heading heading-large container">Преподаватели</h2>
             <div class="teachers-wrapper">
                 <div class="swiper mySwiper-2 teachers-swiper-slider">
-                    <div class="swiper-wrapper">
+                    <div class="swiper-wrapper teachers-slider-wrapper">
                         <div class="swiper-slide teachers-slide">
-                            <img src="img/teachers-1.jpeg" alt="" class="teachers-slide-img method-image">
+                            <div class="img-row">
+                                <img class="img-dot" src="img/teachers-circle.png" alt="">
+                                <img src="img/teachers-1.jpeg" alt="" class="teachers-slide-img method-image">
+                                <img class="img-dot" src="img/teachers-circle.png" alt="">
+                            </div>
+                            
                             <h3 class="teacher-name heading-small">Александр Сироха</h3>
                             <p class="teachers-description">Основатель школы, ведущий тренер-эксперт</p>
                             <button class="secondary" type="button">Подробнее &#8594;</button>
                         </div>
                         <div class="swiper-slide teachers-slide">
-                            <img src="img/teachers-1.jpeg" alt="" class="teachers-slide-img method-image">
+                            <div class="img-row">
+                                <img class="img-dot" src="img/teachers-circle.png" alt="">
+                                <img src="img/teachers-1.jpeg" alt="" class="teachers-slide-img method-image">
+                                <img class="img-dot" src="img/teachers-circle.png" alt="">
+                            </div>
                             <h3 class="teacher-name heading-small">Александр Сироха</h3>
                             <p class="teachers-description">Основатель школы, ведущий тренер-эксперт</p>
                             <button class="secondary" type="button">Подробнее &#8594;</button>
                         </div>
                         <div class="swiper-slide teachers-slide">
-                            <img src="img/teachers-1.jpeg" alt="" class="teachers-slide-img method-image">
+                            <div class="img-row">
+                                <img class="img-dot" src="img/teachers-circle.png" alt="">
+                                <img src="img/teachers-1.jpeg" alt="" class="teachers-slide-img method-image">
+                                <img class="img-dot" src="img/teachers-circle.png" alt="">
+                            </div>
                             <h3 class="teacher-name heading-small">Александр Сироха</h3>
                             <p class="teachers-description">Основатель школы, ведущий тренер-эксперт</p>
                             <button class="secondary" type="button">Подробнее &#8594;</button>
                         </div>
                         <div class="swiper-slide teachers-slide">
-                            <img src="img/teachers-1.jpeg" alt="" class="teachers-slide-img method-image">
+                            <div class="img-row">
+                                <img class="img-dot" src="img/teachers-circle.png" alt="">
+                                <img src="img/teachers-1.jpeg" alt="" class="teachers-slide-img method-image">
+                                <img class="img-dot" src="img/teachers-circle.png" alt="">
+                            </div>
                             <h3 class="teacher-name heading-small">Александр Сироха</h3>
                             <p class="teachers-description">Основатель школы, ведущий тренер-эксперт</p>
                             <button class="secondary" type="button">Подробнее &#8594;</button>
                         </div>
                     </div>
-                    <div class="swiper-pagination"></div>
+                    <!-- <div class="swiper-pagination"></div> -->
                 </div>
             </div>
         </section>
@@ -423,20 +440,22 @@
     autoplay: {
     delay: 3000,
     },
-    effect: 'coverflow',
+    // effect: 'coverflow',
     grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: 'auto',
-    coverflowEffect: {
-        rotate: 3,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        scale: 1,
-        slideShadows: true,
-        }, 
-        // slidesPerView: 3,
-        // centeredSlides: true,
+    // centeredSlides: true,
+    // slidesPerView: 'auto',
+    // coverflowEffect: {
+    //     rotate: 3,
+    //     stretch: 0,
+    //     depth: 100,
+    //     modifier: 1,
+    //     scale: 1,
+    //     slideShadows: true,
+    //     }, 
+        slidesPerView: 3,
+        centeredSlides: true,
+        // slidesPerGroup: 1,
+
         // loop: true,
         // spaceBetween: 30,
         // pagination: {

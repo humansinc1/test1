@@ -691,10 +691,54 @@ html {
     margin-bottom: 3rem;
 }
 
+.teachers-slider-wrapper {
+    align-items: center;
+    margin-left: -120px;
+}
+
 .teachers-swiper-slider {
     width: 100%;
     height: auto;
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
+}
+
+.teachers-slider-wrapper > .swiper-slide {
+    filter: blur(8px);
+}
+
+.teachers-slider-wrapper > .swiper-slide-active {
+    filter: blur(0);
+}
+
+.teachers-slider-wrapper > .swiper-slide-active > .img-row > .teachers-slide-img {
+    width: 100%;
+}
+
+.teachers-slider-wrapper > .swiper-slide > .teacher-name {
+    display: none;
+}
+
+.teachers-slider-wrapper > .swiper-slide > .teachers-description {
+    display: none;
+}
+.teachers-slider-wrapper > .swiper-slide > .secondary {
+    display: none;
+}
+.teachers-slider-wrapper > .swiper-slide > .img-row > .img-dot {
+    display: none;
+}
+
+.teachers-slider-wrapper > .swiper-slide-active > .teacher-name {
+    display: block;
+}
+.teachers-slider-wrapper > .swiper-slide-active > .teachers-description {
+    display: block;
+}
+.teachers-slider-wrapper > .swiper-slide-active > .secondary {
+    display: block;
+}
+.teachers-slider-wrapper > .swiper-slide-active > .img-row > .img-dot {
+    display: block;
 }
 
 .teachers-slide {
@@ -703,12 +747,32 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border-radius: 10px; */
-    /* border: 4px solid rgba(255, 193, 33, 1); */
-    background-color: #fff;
     padding: 1.5rem;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    position: relative;
+    /* width: 40%; */
 }
+
+.img-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-dot {
+    width: 0.75rem;
+    height: 0.75rem;
+}
+
+/* .teachers-slide:before {
+    content: '';
+    background-image: url(../img/teachers-circle.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 16vw;
+    width: 5vw;
+    height: 5vw;
+} */
 
 .teachers-slide-img {
     display: block;
@@ -716,10 +780,18 @@ html {
     height: auto;
     margin: 1.5rem;
     object-fit: cover;
+    /* position: relative; */
 }
 
-.teachers-slide {
-    width: 40%;
+.teachers-slide-img:before {
+    content: "";
+    background-image: url(../img/teachers-circle.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;  
+    width: 16px;
+    height: 16px;
 }
 
 .teachers-description {
@@ -933,4 +1005,11 @@ html {
     .schedule-card {
         width: 100%;
     }
+
+    .teachers-slider-wrapper {
+        margin-left: -105px;
+    }
+
+    .teachers-slide:before {
+        top: 18vw;
 }
