@@ -686,11 +686,6 @@ html {
     margin-bottom: 1rem;
 }
 
-.teachers-wrapper {
-    /* max-width: 1440px;
-    margin: 0 auto; */
-}
-
 .teachers-heading {
     text-align: center;
     margin-bottom: 3rem;
@@ -733,6 +728,39 @@ html {
     margin-bottom: 1rem;
 }
 
+.blog-article-1 {
+    margin-top: 48px;
+    width: 100%;
+    background-image: url(../img/blog-1.jpeg);
+    max-height: 440px;
+    color:#fff;
+    padding-bottom: 2rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blog-article-heading {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 44px;
+    letter-spacing: 0.01em;
+    width: 40%;
+    margin-top: 8px;
+    margin-bottom: 4px;
+}
+
+.blog-article-date {
+    margin-top: 244px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.blog-article-button {
+    background-color: transparent;
+    color:white;
+    border-color: #fff;
+}
 
 
 @media screen and (min-width: 1322px) {
