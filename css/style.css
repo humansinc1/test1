@@ -1124,6 +1124,10 @@ html {
         margin-left: -105px;
     }
 
+    .teachers-swiper-slider {
+        padding: 7.5rem 0;
+    }
+
     .blog-row {
         display: flex;
         flex-direction: column;
@@ -1174,5 +1178,13 @@ html {
     .otzyvi-image {
         margin-left: 14vw;
         margin-top: 13vw;
+    }
+
+    .otzyvi-swiper-slider {
+        max-height: 16rem;
+    }
+
+    .otzyvi-slide {
+        width: 90%;
     }
 }
