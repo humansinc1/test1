@@ -106,16 +106,15 @@
                     <p class="welcome-text-description">Танцевальный проект Точка Контакта от чемпиона России по Бачате и основателя инклюзивного направления для людей с ограничением по зрению</p>
                     <p class="text-small">г. Москва, м. Бауманская</p>
                 </div>     
-                <form class="welcome-form" action="">
+                <form class="welcome-form" method="POST" action="...">
                     <h3 class="welcome-form-heading heading-small">Идет набор в группу с 0!</h3>
                     <p class="welcome-form-description">Запишись на пробное занятие за 400₽</p>
-                    <input id="welcome-form-name" type="text" class="welcome-form-name input" placeholder="Имя" required>
-                    <input id="welcome-form-tel" type="tel" class="welcome-form-telephone input" placeholder="Телефон" required>
+                    <input name ="name" id="welcome-form-name" type="text" class="welcome-form-name input" placeholder="Имя" required>
+                    <input name="telephone" id="welcome-form-tel" type="tel" class="welcome-form-telephone input" placeholder="Телефон" required>
                     <button id="welcome-form-button" class="welcome-form-button highlighted" type="submit">Записаться на занятие</button>
                     <p class="welcome-form-info">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных</p>
                 </form>
             </div>
-            
         </section>
         <section class="dance container container-section">
             <div class="dance-heading">
@@ -343,33 +342,43 @@
                         <div class="swiper-slide teachers-slide">
                             <div class="img-row">
                                 <img class="img-dot" src="img/teachers-circle.png" alt="">
-                                <img src="img/teachers-1.jpeg" alt="" class="teachers-slide-img method-image">
+                                <img src="img/teachers-2.jpg" alt="" class="teachers-slide-img method-image">
                                 <img class="img-dot" src="img/teachers-circle.png" alt="">
                             </div>
-                            <h3 class="teacher-name heading-small">Александр Сироха</h3>
-                            <p class="teachers-description">Основатель школы, ведущий тренер-эксперт</p>
+                            <h3 class="teacher-name heading-small">Ольга Юркова</h3>
+                            <p class="teachers-description">Тренер-ассистент</p>
                             <button class="secondary" type="button">Подробнее &#8594;</button>
                         </div>
                         <div class="swiper-slide teachers-slide">
                             <div class="img-row">
                                 <img class="img-dot" src="img/teachers-circle.png" alt="">
-                                <img src="img/teachers-1.jpeg" alt="" class="teachers-slide-img method-image">
+                                <img src="img/teachers-3.png" alt="" class="teachers-slide-img method-image">
                                 <img class="img-dot" src="img/teachers-circle.png" alt="">
                             </div>
-                            <h3 class="teacher-name heading-small">Александр Сироха</h3>
-                            <p class="teachers-description">Основатель школы, ведущий тренер-эксперт</p>
+                            <h3 class="teacher-name heading-small">Серафима Архипова</h3>
+                            <p class="teachers-description">Тренер</p>
                             <button class="secondary" type="button">Подробнее &#8594;</button>
                         </div>
                         <div class="swiper-slide teachers-slide">
                             <div class="img-row">
                                 <img class="img-dot" src="img/teachers-circle.png" alt="">
-                                <img src="img/teachers-1.jpeg" alt="" class="teachers-slide-img method-image">
+                                <img src="img/teachers-4.jpg" alt="" class="teachers-slide-img method-image">
                                 <img class="img-dot" src="img/teachers-circle.png" alt="">
                             </div>
-                            <h3 class="teacher-name heading-small">Александр Сироха</h3>
-                            <p class="teachers-description">Основатель школы, ведущий тренер-эксперт</p>
+                            <h3 class="teacher-name heading-small">Адель Никольская</h3>
+                            <p class="teachers-description">Врач общей практики, тренер-преподаватель, тренер-кинезиолог, методист</p>
                             <button class="secondary" type="button">Подробнее &#8594;</button>
                         </div>
+                        <!-- <div class="swiper-slide teachers-slide">
+                            <div class="img-row">
+                                <img class="img-dot" src="img/teachers-circle.png" alt="">
+                                <img src="img/teachers-4.jpg" alt="" class="teachers-slide-img method-image">
+                                <img class="img-dot" src="img/teachers-circle.png" alt="">
+                            </div>
+                            <h3 class="teacher-name heading-small">Ольга Шеянова</h3>
+                            <p class="teachers-description">Растяжка</p>
+                            <button class="secondary" type="button">Подробнее &#8594;</button>
+                        </div> -->
                     </div>
                     <!-- <div class="swiper-pagination"></div> -->
                 </div>
@@ -432,7 +441,6 @@
                             VK.Widgets.Group("vk_groups", {mode: 4, wide: 1, height: 710, color1: "FFFFFF", color2: "000000", color3: "#ffc121"}, 151222792);
                             </script>
                     </div>
-                    
                 </div>
                 <div class="widget-tg">
                     <h3 class="heading-small">Наш Телеграм</h3>
@@ -443,7 +451,28 @@
         </section>
         <section class="otzyvi container container-section">
             <div class="otzyvi-wrapper">
-                <h2 class="otzyvi-heading heading-large">Отзывы</h2>
+                <div class="otzyvi-col-1">
+                    <h2 class="otzyvi-heading heading-large">Отзывы</h2>
+                    <div class="otzyvi-slider">
+                        <div class="swiper mySwiper-3 otzyvi-swiper-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide otzyvi-slide">
+                                    <h3 class="otzyvi-slide-heading heading-small">Наталья Шперберг</h3>
+                                    <p class="otzyvi-description">Саша! Хотела сказать тебе огромное спасибо! Ты вдохновил меня на реализацию своей мечты — танцевать бачату. Ты мой человек-ангел! Пусть всё у тебя сложится, как ты того хочешь! Надеюсь как-нибудь станцуем вместе)</p>
+                                </div>
+                                <div class="swiper-slide otzyvi-slide">
+                                    <h3 class="otzyvi-slide-heading heading-small">Наталья Шперберг</h3>
+                                    <p class="otzyvi-description">Саша! Хотела сказать тебе огромное спасибо! Ты вдохновил меня на реализацию своей мечты — танцевать бачату. Ты мой человек-ангел! Пусть всё у тебя сложится, как ты того хочешь! Надеюсь как-нибудь станцуем вместе)</p>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination otzyvi-swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="otzyvi-col-2">
+                    <img src="img/otzyvi-circle-1.png" alt="" class="otzyvi-image-bg">
+                    <img src="img/otzyvi-1.jpeg" alt="" class="otzyvi-image">
+                </div>
             </div>
             
         </section>
@@ -488,6 +517,16 @@
     grabCursor: true,
         slidesPerView: 3,
         centeredSlides: true,
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper-3", {
+        direction: "vertical",
+        grabCursor: true,
+        pagination: {
+            el: ".otzyvi-swiper-pagination",
+            clickable: true,
+            },
         });
     </script>
 </body>
