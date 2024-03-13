@@ -951,6 +951,63 @@ html {
     border: 4px solid rgba(255, 193, 33, 1);
 }
 
+.project-row{
+    gap: 1rem;
+}
+
+.project-heading {
+    margin-bottom: 1.5rem;
+}
+
+.project-description {
+    min-height: auto;
+}
+
+.project-video {
+    width: 100%;
+    height: auto;
+}
+
+.video-wrapper {
+    height: 48vw;
+    border-radius: 40px;
+    margin-top: 2rem;
+}
+
+.therapy-wrapper {
+    display: flex;
+    gap: 2rem;
+}
+
+.therapy-col-1, .therapy-col-2 {
+    width: 50%;
+}
+
+.therapy-button {
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.therapy-card {
+    width: 100%;
+    min-height: auto;
+}
+
+.therapy-img {
+    border-radius: 40px;
+}
+
+.therapy-col-2 {
+    position: relative;
+}
+
+.therapy-img-2 {
+    position: absolute;
+    right: -10vw;
+    bottom: -10vw;
+    z-index: -1;
+}
+
 @media screen and (min-width: 1322px) {
     .container {
         padding-left: 5rem;
@@ -1187,5 +1244,26 @@ html {
 
     .otzyvi-slide {
         width: 90%;
+    }
+
+    .project-row{
+        flex-direction: column;
+    }
+
+    .project-col {
+        width: 100%;
+    }
+
+    .project-button-row {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .therapy-wrapper {
+        flex-direction: column;
+    }
+
+    .therapy-col-1, .therapy-col-2 {
+        width: 100%;
     }
 }
