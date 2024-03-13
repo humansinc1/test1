@@ -455,14 +455,16 @@
                     <h2 class="otzyvi-heading heading-large">Отзывы</h2>
                     <div class="otzyvi-slider">
                         <div class="swiper mySwiper-3 otzyvi-swiper-slider">
-                            <div class="swiper-wrapper">
+                            <div class="swiper-wrapper otzyvi-slider-wrapper">
                                 <div class="swiper-slide otzyvi-slide">
-                                    <h3 class="otzyvi-slide-heading heading-small">Наталья Шперберг</h3>
-                                    <p class="otzyvi-description">Саша! Хотела сказать тебе огромное спасибо! Ты вдохновил меня на реализацию своей мечты — танцевать бачату. Ты мой человек-ангел! Пусть всё у тебя сложится, как ты того хочешь! Надеюсь как-нибудь станцуем вместе)</p>
+                                    <img src="img/otzyv-2.png" alt="" class="otzyv-image">
+                                    <!-- <h3 class="otzyvi-slide-heading heading-small">Наталья Шперберг</h3>
+                                    <p class="otzyvi-description">Саша! Хотела сказать тебе огромное спасибо! Ты вдохновил меня на реализацию своей мечты — танцевать бачату. Ты мой человек-ангел! Пусть всё у тебя сложится, как ты того хочешь! Надеюсь как-нибудь станцуем вместе)</p> -->
                                 </div>
                                 <div class="swiper-slide otzyvi-slide">
-                                    <h3 class="otzyvi-slide-heading heading-small">Наталья Шперберг</h3>
-                                    <p class="otzyvi-description">Саша! Хотела сказать тебе огромное спасибо! Ты вдохновил меня на реализацию своей мечты — танцевать бачату. Ты мой человек-ангел! Пусть всё у тебя сложится, как ты того хочешь! Надеюсь как-нибудь станцуем вместе)</p>
+                                    <img src="img/otzyv-2.png" alt="" class="otzyv-image">
+                                    <!-- <h3 class="otzyvi-slide-heading heading-small">Наталья Шперберг</h3>
+                                    <p class="otzyvi-description">Саша! Хотела сказать тебе огромное спасибо! Ты вдохновил меня на реализацию своей мечты — танцевать бачату. Ты мой человек-ангел! Пусть всё у тебя сложится, как ты того хочешь! Надеюсь как-нибудь станцуем вместе)</p> -->
                                 </div>
                             </div>
                             <div class="swiper-pagination otzyvi-swiper-pagination"></div>
@@ -500,6 +502,7 @@
     <script>
         var swiper = new Swiper(".mySwiper-1", {
         direction: "vertical",
+        autoHeight: true,
         grabCursor: true,
         pagination: {
             el: ".swiper-pagination",
@@ -522,6 +525,7 @@
     <script>
         var swiper = new Swiper(".mySwiper-3", {
         direction: "vertical",
+        autoHeight: true,
         grabCursor: true,
         pagination: {
             el: ".otzyvi-swiper-pagination",
