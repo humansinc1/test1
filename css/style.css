@@ -99,6 +99,10 @@ html {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
+.tertiary {
+    background-color: #fff;
+}
+
 .bg-image {
     background-repeat: no-repeat;
     background-position: center center;
@@ -908,8 +912,8 @@ html {
     position: relative;
 }
 
-.otzyvi-slider {
-    height: 145%;
+.otzyvi-swiper-slider {
+    height: 17rem;
 }
 
 .otzyvi-slide {
@@ -968,6 +972,16 @@ html {
     height: auto;
 }
 
+.link-telegram {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.button-telegram {
+    background-color: #fff;
+}
+
 .video-wrapper {
     height: 48vw;
     border-radius: 40px;
@@ -1008,6 +1022,10 @@ html {
     z-index: -1;
 }
 
+.contactus {
+    margin-top: 10rem;
+}
+
 .contactus-slide {
     display: flex;
     flex-direction: column;
@@ -1016,11 +1034,12 @@ html {
     align-items: center;
     background-color: rgba(13, 17, 20, 1);
     border-radius: 40px;
+    padding: 5.375rem;
 }
 
 .contactus-wrapper {
     display: flex;
-    gap: 2rem;
+    gap: 8.25rem;
 }
 
 .contactus-col-1, .contactus-col-2 {
@@ -1030,6 +1049,66 @@ html {
 .contactus-col-2 {
     display: flex;
     flex-direction: column;
+}
+
+.contactus-name, .contactus-slide-description {
+    color: #fff;
+}
+
+.contactus-slide-description {
+    opacity: 0.7;
+}
+
+.contactus-description {
+    color: rgba(13, 17, 20, 0.6);
+    margin-top: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.contactus-slide-img {
+    width: 70%;
+}
+
+.contactus-telephone {
+    margin-left: 0.75rem;
+}
+
+.contactus-social {
+    margin-top: 6.5rem;
+}
+
+.social-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.125rem;
+    margin-left: 0.75rem;
+}
+
+.contactus-social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.contactus-button {
+    padding: 1rem;
+    border-radius: 24px;
+    width: 47%;
+}
+.contactus-button:hover {
+    background-color: rgba(255, 193, 33, 1);
+}
+.secondary-name {
+    color: rgba(13, 17, 20, 0.6);
+}
+
+.contactus-disc {
+    color: rgba(13, 17, 20, 0.4);
+    font-size: 0.75rem;
+    line-height: 1rem;
+    margin-top: 0.75rem;
+    width: 47%;
 }
 
 @media screen and (min-width: 1322px) {
@@ -1257,6 +1336,10 @@ html {
         flex-direction: column;
     }
 
+    .otzyvi-swiper-slider {
+        height: 38vw;
+    }
+
     .otzyvi-col-1, .otzyvi-col-2 {
         width: 100%;
     }
@@ -1267,7 +1350,11 @@ html {
     }
 
     .otzyvi-slide {
-        width: 90%;
+        width: 80%;
+    }
+
+    .otzyv-image {
+        width: 80vw;
     }
 
     .project-row{
@@ -1288,6 +1375,27 @@ html {
     }
 
     .therapy-col-1, .therapy-col-2 {
+        width: 100%;
+    }
+
+    .contactus-wrapper {
+        flex-direction: column-reverse;
+        gap: 3rem;
+    }
+
+    .contactus-col-1, .contactus-col-2 {
+        width: 100%;
+    }
+
+    .contactus-button {
+        width: 100%;
+    }
+
+    .contactus-social {
+        margin-top: 3rem;
+    }
+
+    .contactus-disc {
         width: 100%;
     }
 }
