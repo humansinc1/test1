@@ -892,6 +892,10 @@ html {
 .widget-tg > h3 {
     margin-bottom: 1.5rem;
     text-align: center;
+}   
+
+.widget-tg {
+    margin: 0 auto;
 }
 
 .otzyvi-wrapper {
@@ -1069,8 +1073,9 @@ html {
     width: 70%;
 }
 
-.contactus-telephone {
-    margin-left: 0.75rem;
+.contactus-button-row {
+    display: flex;
+    gap: 0.75rem;
 }
 
 .contactus-social {
@@ -1109,6 +1114,106 @@ html {
     line-height: 1rem;
     margin-top: 0.75rem;
     width: 47%;
+}
+
+.footer-wrapper {
+    background-color:#0D1114;
+    border-radius: 40px;
+    padding: 2.5rem 6.725rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    row-gap: 1rem;
+    column-gap: 2rem;
+}
+
+.footer-button {
+    background-color: transparent;
+    border: 1px solid #FFC121;
+    padding: 0.5rem 0.725rem;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.footer-name {
+    grid-column: 1;
+    grid-row: 2;
+    color: #fff;
+    font-weight: 1000;
+    line-height: 1.125rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.footer-button-contacts {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.footer-button-schedule {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.footer-button-products {
+    grid-column: 3;
+}
+
+.footer-button-signin {
+    grid-column: 3;
+    grid-row: 2;
+    background-color: #FFC121;
+    color: #0D1114;
+}
+
+.footer-address {
+    grid-column: 4;
+    color: #fff;
+    text-align: right;
+
+}
+
+.footer-copyright {
+    grid-column: 4;
+    grid-row: 2;
+    color:rgba(255, 255, 255, 0.7);
+    font-size: 0.875rem;
+    text-align: right;
+}
+
+.divider {
+    grid-column: 1 / span 4;
+    grid-row: 4;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-design {
+    grid-row: 5;
+}
+
+.footer-studio {
+    grid-column: 2;
+    grid-row: 5;
+}
+
+.design-name, .studio-name {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.design-link, .studio-link {
+    margin-top: 0.5rem;
+    font-weight: 500;
+    color: rgba(255, 193, 33, 1);
+    text-decoration: underline;
+}
+
+.footer-terms {
+    grid-column: 3 / span 2;
+    grid-row: 5;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.75rem;
+    text-align: right;
 }
 
 @media screen and (min-width: 1322px) {
@@ -1285,6 +1390,10 @@ html {
         width: 100%;
     }
 
+    .schedule-card-description-time, .schedule-card-description-day {
+        font-size: 1.5rem;
+    }
+
     .teachers-slider-wrapper {
         margin-left: -105px;
     }
@@ -1330,6 +1439,8 @@ html {
     
     .widget-vk, .widget-tg {
         width: 100%;
+        border: none;
+        padding: 0;
     }
 
     .otzyvi-wrapper {
@@ -1378,6 +1489,10 @@ html {
         width: 100%;
     }
 
+    .therapy-img-2 {
+        display: none;
+    }
+
     .contactus-wrapper {
         flex-direction: column-reverse;
         gap: 3rem;
@@ -1397,5 +1512,24 @@ html {
 
     .contactus-disc {
         width: 100%;
+    }
+
+    .contactus-button-row {
+        flex-direction: column;
+    }
+
+    .footer-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1.5rem 1rem;
+    }
+
+    .footer-logo {
+        margin: 0 auto; 
+    }
+
+    .footer-name {
+        text-align: center;
     }
 }
