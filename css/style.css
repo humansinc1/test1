@@ -51,14 +51,14 @@ html {
     font-weight: 800;
     font-size: 2.75rem;
     line-height: 3rem;
-    letter-spacing: 1px;
+    /* letter-spacing: 1%; */
 }
 
 .heading-small {
     font-size: 1.75rem;
     line-height: 1.875rem;
     font-weight: 800;
-    letter-spacing: 1px;
+    /* letter-spacing: 1%; */
 }
 
 .card-text {
@@ -83,7 +83,16 @@ html {
     cursor: pointer;
     font-weight: 500;
     line-height: 1.35rem;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); */
+    transition: background-color 0.2s ease-in-out;
+}
+
+.highlighted:hover {
+    background-color: rgb(237, 178, 30);
+}
+
+.highlighted:active {
+    background-color: rgb(211, 159, 26);
 }
 
 .secondary {
@@ -96,12 +105,26 @@ html {
     cursor: pointer;
     font-weight: 500;
     line-height: 1.35rem;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); */
+    transition: background-color 0.2s ease-in-out;
 }
 
-.tertiary {
+.secondary:hover {
+    background-color: rgba(255, 193, 33, 1);
+}
+
+.secondary:active {
+    background-color: rgb(234, 176, 29);
+}
+
+/* .tertiary {
     background-color: #fff;
 }
+
+.tertiary:hover {
+    background-color: rgba(255, 193, 33, 1);
+
+} */
 
 .bg-image {
     background-repeat: no-repeat;
@@ -223,7 +246,7 @@ html {
     height: 800px;
     background-color: 
     rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
     z-index: -1;
 }
 
@@ -713,8 +736,9 @@ html {
     font-weight: 500;
     line-height: 1.125rem;
 }
-.schedule-card-description-day-mod {
-    margin-bottom: 1rem;
+
+.schedule-card-description-day-1, .schedule-card-description-time-1 {
+    margin-bottom: 0.5rem;
 }
 
 .teachers-heading {
@@ -827,7 +851,7 @@ html {
     font-size: 2.5rem;
     font-weight: 800;
     line-height: 2.75rem;
-    letter-spacing: 1px;
+    /* letter-spacing: 1%; */
     width: 40%;
     margin-top: 0.5rem;
     margin-bottom: 0.25rem;
@@ -948,10 +972,10 @@ html {
 }
 
 .otzyvi-slide {
-    /* width: 79%; */
-    /* background-color: rgba(13, 17, 20, 0.06); */
-    /* border-radius: 40px; */
-    /* padding: 3vw; */
+    width: 79%;
+    background-color: rgba(13, 17, 20, 0.06);
+    border-radius: 40px;
+    padding: 3vw;
     box-sizing: border-box;
     margin-left: 7%;
 }
@@ -969,12 +993,6 @@ html {
     top: 0;
     left: 0;
     z-index: -1;
-}
-
-.otzyv-image {
-    width: 90%;
-    height: auto;
-    object-fit: cover;
 }
 
 .otzyvi-image {
@@ -1097,7 +1115,8 @@ html {
 }
 
 .contactus-slide-img {
-    width: 70%;
+    width: 18vw;
+    max-width: 302px;
     height: auto;
 }
 
@@ -1128,6 +1147,7 @@ html {
     padding: 1rem;
     border-radius: 24px;
     width: 47%;
+    transition: background-color 0.2s ease-in-out;
 }
 .contactus-button:hover {
     background-color: rgba(255, 193, 33, 1);
@@ -1161,6 +1181,19 @@ html {
     padding: 0.5rem 0.725rem;
     color: #fff;
     border-radius: 50px;
+    transition: background-color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+
+}
+
+.footer-button:hover {
+    background-color: rgba(255, 193, 33, 1);
+    color:#0D1114;
+}
+
+.footer-button:active {
+    background-color: rgb(230, 173, 29);
+    color:#0D1114;
 }
 
 .footer-name {
@@ -1169,7 +1202,7 @@ html {
     color: #fff;
     font-weight: 1000;
     line-height: 1.125rem;
-    letter-spacing: 1px;
+    /* letter-spacing: 1%; */
     text-transform: uppercase;
 }
 
@@ -1192,6 +1225,15 @@ html {
     grid-row: 2;
     background-color: #FFC121;
     color: #0D1114;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.footer-button-signin:hover {
+    background-color: #e9af1c;
+}
+
+.footer-button-signin:active {
+    background-color: #cf9b18;
 }
 
 .footer-address {
@@ -1345,6 +1387,7 @@ html {
     .welcome-form {
         width: 100%;
         padding: 1.5rem 1.5rem 0.5rem;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
     }
 
     .welcome-text {
@@ -1416,7 +1459,7 @@ html {
 
     .schedule-card {
         width: 100%;
-        padding: 1rem;
+        padding: 1.5rem;
     }
 
     .schedule-row-2, .schedule-row-1 {
@@ -1437,7 +1480,11 @@ html {
     }
 
     .teachers-swiper-slider {
-        padding: 7.5rem 0;
+        padding: 9.5rem 0;
+    }
+
+    .teachers-slider-wrapper > .swiper-slide-active > .img-row > .teachers-slide-img {
+        width: 150%;
     }
 
     .blog-row {
@@ -1486,24 +1533,15 @@ html {
     }
 
     .otzyvi-swiper-slider {
-        height: 38vw;
+        height: 19rem;
     }
 
     .otzyvi-col-1, .otzyvi-col-2 {
         width: 100%;
     }
 
-    .otzyvi-image {
-        margin-left: 14%;
-        margin-top: 13%;
-    }
-
     .otzyvi-slide {
         width: 80%;
-    }
-
-    .otzyv-image {
-        width: 80vw;
     }
 
     .project-row{
@@ -1554,6 +1592,10 @@ html {
 
     .contactus-button-row {
         flex-direction: column;
+    }
+
+    .contactus-slide-img {
+        width: 45vw;
     }
 
     .footer-wrapper {
