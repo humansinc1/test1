@@ -223,7 +223,7 @@ html {
     height: 800px;
     background-color: 
     rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(20px);
     z-index: -1;
 }
 
