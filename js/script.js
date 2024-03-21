@@ -1,8 +1,8 @@
 //redirect buttons to the form input
 
-document.getElementById("joinus-button").addEventListener('click', () => {
-    document.getElementById('welcome-form-name').focus();
-});
+// document.getElementById("joinus-button").addEventListener('click', () => {
+//     document.getElementById('welcome-form-name').focus();
+// });
 document.getElementById("menu-button-desktop").addEventListener('click', () => {
     document.getElementById('welcome-form-name').focus();
 });

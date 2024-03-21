@@ -415,8 +415,8 @@ html {
     position: relative;
 }
 
-.joinus-button {
-    margin-top: 1.75rem;
+.joinus-heading {
+    margin-bottom: 1.75rem;
 }
 
 .products-wrapper {
@@ -912,10 +912,10 @@ html {
     margin-bottom: 1rem;
 }
 
-.blog-article-button {
+/* .blog-article-button {
     width: 100%;
     margin-top: auto;
-}
+} */
 
 .blog-widgets-wrapper {
     display: flex;
@@ -1146,7 +1146,7 @@ html {
 .contactus-button {
     padding: 1rem;
     border-radius: 24px;
-    width: 47%;
+    width: 42%;
     transition: background-color 0.2s ease-in-out;
 }
 .contactus-button:hover {
@@ -1182,7 +1182,8 @@ html {
     color: #fff;
     border-radius: 50px;
     transition: background-color 0.2s ease-in-out;
-    transition: color 0.2s ease-in-out;
+    align-self: center;
+
 
 }
 
@@ -1506,9 +1507,9 @@ html {
         display: block;
     }
 
-    .blog-article-main-button
+    .blog-article-main-description
     {
-        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
     }
 
     .blog-article-main-heading {
@@ -1611,5 +1612,9 @@ html {
 
     .footer-name {
         text-align: center;
+    }
+
+    .footer-button {
+        width: 90%;
     }
 }
